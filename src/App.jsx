@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-
+import Img from './assets/img/Anorbank.png'
 function TodoApp() {
   const [todos, setTodos] = useState([]);
   const [inputValue, setInputValue] = useState("");
@@ -104,12 +104,15 @@ function TodoApp() {
             <button onClick={handleEditEnd}>Cancel</button>
           </div>
         ) : (
-          <div>
+          <div className="content">
+            <div className="support">
+              
             <span onDoubleClick={handleEditStart}>{text}</span>
             <span>Category: {category}</span>
             <span>Reminder: {reminder ? "Set" : "Not Set"}</span>
             <span>Priority: {priority}</span>
             <span>Last Edited: {new Date(timestamp).toLocaleString()}</span>
+            </div>
 
             <button onClick={() => deleteTodo(id)}>Delete</button>
             <button onClick={handleEditStart}>Rename</button>
@@ -145,11 +148,15 @@ function TodoApp() {
     return todo.text.toLowerCase().includes(searchText.toLowerCase());
   });
 
-  return (
-    <div className="container">
+return (
+
+  <div className="container">
+      <img src={Img}  />
+
       <h1>Todo App</h1>
       <input
         type="text"
+        placeholder="Enter Value"
         value={inputValue}
         onChange={function (e) {
           setInputValue(e.target.value);
@@ -182,6 +189,12 @@ function TodoApp() {
         placeholder="Priority"
       />
       <button onClick={addTodo}>Add Todo</button>
+      
+<div>
+
+</div>
+<div className="sub">
+
       <div>
         <label>
           Filter By:
@@ -198,6 +211,7 @@ function TodoApp() {
           </select>
         </label>
       </div>
+
       <div>
         <label>
           Sort By:
@@ -223,10 +237,14 @@ function TodoApp() {
         />
         <button onClick={searchTodos}>Search</button>
       </div>
-      <div className="last">
+      <div className="subChange">
         <button onClick={() => handleViewChange("list")}>List View</button>
         <button onClick={() => handleViewChange("grid")}>Grid View</button>
       </div>
+</div>
+
+
+      
       {view === "list" ? (
         <ul>
           {searchResults.map(function (todo) {

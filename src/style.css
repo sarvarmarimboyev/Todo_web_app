@@ -4,20 +4,20 @@
   box-sizing: border-box;
   font-family: sans-serif;
   color: #fff;
+  list-style: none;
 }
 
 input {
   outline: none;
   padding: 5px 10px;
-  color: #25273c;
+  color: #181824;
 }
 body {
-  background-color: #25273c;
+  background-color: #151531;
 }
 button {
   color: #fff;
   background-color: #008000;
-  border: none;
   padding: 10px 15px;
   border-radius: 10px;
 }
@@ -27,13 +27,56 @@ h1 {
 }
 
 .container {
-  margin: 50px;
+  padding: 100px;
 }
 
 input {
-  margin-left: 10px;
+  margin: 10px;
   border-radius: 10px;
-  padding: 10px ;
+  padding: 10px;
 }
-.last {
+img {
+  width: 30%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.FilterSort {
+  margin: 10px;
+  gap: 10px;
+  display: flex;
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+select {
+  background-color: #25273c;
+  padding: 7px;
+  margin: 15px;
+  border-radius: 10px;
+}
+.sub {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.content {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.content .support {
+  background-color: rgb(68, 61, 125);
+  padding: 10px 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.subChange {
+  display: flex;
+  gap: 5px;
 }
