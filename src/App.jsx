@@ -146,7 +146,7 @@ function TodoApp() {
   });
 
   return (
-    <div>
+    <div className="container">
       <h1>Todo App</h1>
       <input
         type="text"
@@ -223,7 +223,7 @@ function TodoApp() {
         />
         <button onClick={searchTodos}>Search</button>
       </div>
-      <div>
+      <div className="last">
         <button onClick={() => handleViewChange("list")}>List View</button>
         <button onClick={() => handleViewChange("grid")}>Grid View</button>
       </div>

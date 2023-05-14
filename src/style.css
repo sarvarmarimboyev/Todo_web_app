@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+input {
+  outline: none;
+  padding: 5px 10px;
+  color: #25273c;
+}
+body {
+  background-color: #25273c;
+}
+button {
+  color: #fff;
+  background-color: #008000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+h1 {
+  padding: 20px;
+}
+
+.container {
+  margin: 50px;
+}
+
+input {
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 10px ;
+}
+.last {
+}
