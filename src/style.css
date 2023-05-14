@@ -27,7 +27,7 @@ h1 {
 }
 
 .container {
-  padding: 100px;
+  padding: 10%;
 }
 
 input {
@@ -80,4 +80,29 @@ select {
 .subChange {
   display: flex;
   gap: 5px;
+}
+
+@media (max-width: 1065px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container .sub {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: grid;
+    text-align: center;
+  }
+  .container .sub {
+    display: grid;
+
+    text-align: center;
+  }
+
+  .container .subChange {
+    display: grid;
+  }
 }
